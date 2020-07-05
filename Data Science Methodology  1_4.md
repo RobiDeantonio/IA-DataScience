@@ -1,4 +1,4 @@
-[<p align="center"><img src="https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/Images/CCLog.png" width=300></p>](https://cognitiveclass.ai/)
+[<p align="center"><img src="https://github.com/RobiDeantonio/IA-IBM/blob/master/Resources/cognitiveclass.png" width=300></p>](https://cognitiveclass.ai/)
 
 <h1 align=center><font size = 5>From Problem to Approach</font></h1>
 
