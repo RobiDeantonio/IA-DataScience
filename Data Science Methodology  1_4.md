@@ -1,4 +1,8 @@
-[<p align="center"><img src="https://github.com/RobiDeantonio/IA-IBM/blob/master/Resources/cognitiveclass.png" width=300></p>](https://cognitiveclass.ai/)
+<a href="https://cognitiveclass.ai">
+ <p align="center">
+  <img src = "https://github.com/RobiDeantonio/IA-IBM/blob/master/Resources/cognitiveclass.png" width = 500> 
+ </p>
+</a>
 
 <h1 align=center><font size = 5>From Problem to Approach</font></h1>
 
