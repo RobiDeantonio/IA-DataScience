@@ -1,0 +1,13 @@
+news_sites:
+  losdanieles:
+    url: https://losdanieles.com/
+    queries:
+      homepage_article_links:  '.entry-title a'
+      article_title: 'header h1'
+      article_body: 'div p'
+  larepublica:
+    url: https://larepublica.co/
+    queries:
+      homepage_article_links:  '.m-0 a'
+      article_title: '.'
+      article_body: '.'
