@@ -1,3 +1,4 @@
 [submodule "Scraping/Scrapy/Intelligence_Agency_Website"]
 	path = Scraping/Scrapy/Intelligence_Agency_Website
 	url = git@github.com:RobiDeantonio/Intelligence_Agency_Website.git
+	ignore = dirty
