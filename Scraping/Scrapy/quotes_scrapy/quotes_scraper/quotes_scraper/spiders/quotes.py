@@ -23,7 +23,7 @@ class QuotesSpider(scrapy.Spider):
         'CONCURRENT-REQUEST' : 24,
         'MEMUSAGE_LIMIT_MB': 2048,
         'MEMUSAGE_NOTIFY_MAIL':['rysanchezd@unal.edu.co'],
-        'ROBOTSTXT_OBET': True,
+        'ROBOTSTXT_OBEY': True,
         'USAGE_AGENT': 'Pepito',
         'FEED_EXPORT_ENCODING': 'utf-8'
     }
