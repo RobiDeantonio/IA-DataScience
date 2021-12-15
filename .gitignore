@@ -1,3 +1,5 @@
+db/mongodb/database/*
+
 docker-compose.yml
 Dockerfile
 requirements.txt

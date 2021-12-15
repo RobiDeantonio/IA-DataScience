@@ -1,0 +1,70 @@
+﻿
+# Conectarse a MongoDB
+mongo <URI Atlas>
+
+# Usar la base de datos creada de platzi
+use platzi-db
+
+# El campo _id si no es agregado por nosotros de forma explícita, MongoDB lo agrega por nosotros como un ObjectId
+# el campo _id es obligatorio en todos los documentos
+
+
+# ---------------------------------Create-----------------------------
+
+// Arreglo de ejemplo
+use test
+db.inventory.insertMany(
+
+[{ _id: 1, item: { name: "ab", code: "123" }, qty: 15, tags: [ "A", "B", "C" ] },
+{ _id: 2, item: { name: "cd", code: "123" }, qty: 20, tags: [ "B" ] },
+{ _id: 3, item: { name: "ij", code: "456" }, qty: 25, tags: [ "A", "B" ] },
+{ _id: 4, item: { name: "xy", code: "456" }, qty: 30, tags: [ "B", "A" ] },
+{ _id: 5, item: { name: "mn", code: "000" }, qty: 20, tags: [ [ "A", "B" ], "C" ] }]
+
+)
+
+// $or
+db.inventory.find({$or: [{qty: {$gt: 25}}, {qty: {$lte: 15}}]})
+
+// $gte
+db.inventory.find({qty: {$gte: 25}})
+
+// $size
+db.inventory.find({tags: {$size: 2}})
+
+// Insertemos estos documentos de ejemplo en la colección survey
+db.survey.insertMany([ 
+{ _id: 1, results: [ { product: "abc", score: 10 }, { product: "xyz", score: 5 } ] },
+ { _id: 2, results: [ { product: "abc", score: 8 }, { product: "xyz", score: 7 } ] },
+ { _id: 3, results: [ { product: "abc", score: 7 }, { product: "xyz", score: 8 } ]}
+])
+
+// $elemMatch
+db.survey.find(
+   { results: { $elemMatch: { product: "xyz", score: { $gte: 8 } } } }
+)
+
+db.survey.find(
+   { results: { $elemMatch: { product: "xyz" } } }```
+
+
+
+####
+
+$eq     =
+$gt     >
+$gte    >=
+$lt     <
+$lte    <=
+$ne     !=
+$in     valores dentro de un rango
+$nin    valores que no estan dentro de un rango
+$and    Une queries con un AND logico
+$not    Invierte el efecto de un query
+$nor    Une queries con un NOR logico
+$or     Une queries con un OR logico
+$exist  Docuemntos que cuentan con un campo especifico
+$type   Docuemntos que cuentan con un campo de un tipo especifico
+$all    Arreglos que contengan todos los elementos del query
+$elemMatch    Documentos que cumplen la condicion del $elemMatch en uno de sus elementos
+$size   Documentos que contienen un campo tipo arreglo de un tamaño especifico.
