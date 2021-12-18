@@ -1,0 +1,25 @@
+
+docker exec -it hadoop-master bash
+    echo "Text to Hadoop" >> example.txt
+    hdfs dfs -mkdir -p platzi
+    hdfs dfs -put  example.txt  platzi/
+    hdfs dfs -ls platzi/
+
+
+# fail conection into hadoop_host: 9000_hadoop_host; in container RUN next commands
+    stop-all.sh
+    hadoop namenode -format
+    start-all.sh
+
+To know ip of every hadoop container
+hostname -I
+
+File of PC host 
+sudo nano /etc/hosts
+
+172.28.0.2      hadoop-master
+172.28.0.5      hadoop-slave1
+172.28.0.7      hadoop-slave2
+172.28.0.4      hadoop-slave3
+172.28.0.6      hadoop-slave4
+172.28.0.3      hadoop-slave5
