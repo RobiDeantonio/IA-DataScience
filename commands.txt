@@ -1,0 +1,10 @@
+## submodules
+# create Git repository
+
+git submodule add git@github.com:RobiDeantonio/Sciky-Learn.git
+git pull
+
+cd Sciky-Learn 
+git commit -am 'Sciky Learn first commit'
+cd ..
+git push 
