@@ -7,4 +7,5 @@ git pull
 cd Sciky-Learn 
 git commit -am 'Sciky Learn first commit'
 cd ..
+git commit -am 'New Submodule Sciky Learn'
 git push 
