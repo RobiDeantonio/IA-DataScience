@@ -1,3 +1,9 @@
+
+db/postgres/postgresVol/*
+db/postgres/postgresVol2/*
+
+Django/data/*
+
 db/mongodb/database/*
 hadoop/hadoop_data/*
 

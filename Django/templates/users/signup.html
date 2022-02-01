@@ -1,0 +1,35 @@
+{% extends 'users/base.html' %}
+
+{% block head_content %}
+<title> Platzigram </title>
+{% endblock  %}
+
+{% block container %}
+    {% if error %}
+        <p class="alert alert-danger">{{error}}</p>
+    {% endif %}
+
+    <form action= "{% url 'signup' %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Username" name="username" required="true"/>
+        </div>
+        <div class="form-group">
+            <input class="form-control"  type="password" placeholder="Password" name="password" required="true" />    
+        </div>
+        <div class="form-group">
+            <input class="form-control"  type="password" placeholder="Password Confirmation" name="pass_confirmation" required="true" />    
+        </div>
+        <div class="form-group">
+            <input class="form-control"  type="text" placeholder="First Name" name="first_name" required="true" />    
+        </div>
+        <div class="form-group">
+            <input class="form-control"  type="text" placeholder="Last Name" name="last_name" required="true" />    
+        </div>
+        <div class="form-group">
+            <input class="form-control"  type="email" placeholder="Email Address" name="email" required="true" />    
+        </div>
+
+        <button class ="btn btn-primary btn-block mt-5" type="submit"> Register !</button>
+    </form>
+{% endblock  %}
