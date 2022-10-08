@@ -4,3 +4,6 @@
 [submodule "Sciky-Learn"]
 	path = Sciky-Learn
 	url = git@github.com:RobiDeantonio/Sciky-Learn.git
+[submodule "MLOps"]
+	path = MLOps
+	url = git@github.com:RobiDeantonio/MLOps.git
