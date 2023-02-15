@@ -9,3 +9,57 @@ git commit -am 'Sciky Learn first commit'
 cd ..
 git commit -am 'New Submodule Sciky Learn'
 git push 
+
+
+######## CERES
+###  Commands to download project and init on local 
+
+git init
+git remote add origin https://github.com/RobiDeantonio/ceres-robotics-project.git
+
+git branch     ## Show actual branches
+git fetch --all
+git branch
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+git checkout main
+git submodule init
+git pull origin main --all
+
+git checkout main       ## to work with main branch
+git checkout <Branch>   ## to work with <Branch> branch
+
+
+    ## Create submodules
+    # create Git repository
+    
+    git submodule add git@github.com:RobiDeantonio/CERES-gui_and_advanced_Navigation.git
+    git pull
+    
+    cd CERES-gui_and_advanced_Navigation
+    git add .
+    git commit -am 'Upload Ceres GUI files'
+    git push
+    cd ..
+    git add CERES-gui_and_advanced_Navigation
+    git commit -am 'New Submodule CERES GUI' 
+    git push 
+
+
+
+
+### Others commands to work with git and gitHub 
+
+## to send a push to github
+git checkout -b <New Branch> 
+git add <folder o files> :   use '.' for all files
+git commit -am "ROS interface ceres GUI"
+git push  origin <Remote Branch> 
+
+
+git log
+git status
+git push origin --delete <Branch remote to remove>
+git branch -d <remove Branch>
+git show-branch 
+
+git revert HEAD
