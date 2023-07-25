@@ -1,0 +1,74 @@
+{
+  "version" : 0.0,
+  "dataset" : {
+    "item_count" : 7110,
+    "evaluation_time" : "2023-07-19T15:09:36.946Z"
+  },
+  "multiclass_classification_metrics" : {
+    "confusion_matrix" : {
+      "0" : {
+        "0" : 1191,
+        "1" : 350,
+        "-1" : 829
+      },
+      "1" : {
+        "0" : 375,
+        "1" : 1809,
+        "-1" : 186
+      },
+      "-1" : {
+        "0" : 818,
+        "1" : 167,
+        "-1" : 1385
+      }
+    },
+    "accuracy" : {
+      "value" : 0.6167369901547117,
+      "standard_deviation" : 0.0045836123490656105
+    },
+    "weighted_recall" : {
+      "value" : 0.6167369901547117,
+      "standard_deviation" : 0.004583612349065544
+    },
+    "weighted_precision" : {
+      "value" : 0.618131292948179,
+      "standard_deviation" : 0.004965509950841283
+    },
+    "weighted_f0_5" : {
+      "value" : 0.6178321126560414,
+      "standard_deviation" : 0.004879664314601611
+    },
+    "weighted_f1" : {
+      "value" : 0.6174024881038236,
+      "standard_deviation" : 0.004760038389702813
+    },
+    "weighted_f2" : {
+      "value" : 0.6169956529763538,
+      "standard_deviation" : 0.004650867089141523
+    },
+    "accuracy_best_constant_classifier" : {
+      "value" : 0.3333333333333333,
+      "standard_deviation" : 0.002994606898762947
+    },
+    "weighted_recall_best_constant_classifier" : {
+      "value" : 0.3333333333333333,
+      "standard_deviation" : 0.002994606898762947
+    },
+    "weighted_precision_best_constant_classifier" : {
+      "value" : 0.1111111111111111,
+      "standard_deviation" : 0.002000836084729146
+    },
+    "weighted_f0_5_best_constant_classifier" : {
+      "value" : 0.1282051282051282,
+      "standard_deviation" : 0.002219292053358545
+    },
+    "weighted_f1_best_constant_classifier" : {
+      "value" : 0.16666666666666666,
+      "standard_deviation" : 0.002623990294091278
+    },
+    "weighted_f2_best_constant_classifier" : {
+      "value" : 0.2380952380952381,
+      "standard_deviation" : 0.0030574340235902087
+    }
+  }
+}
