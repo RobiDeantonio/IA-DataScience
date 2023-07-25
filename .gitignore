@@ -13,9 +13,9 @@ requirements.txt
 .dockerignore
 .ipynb_checkpoints
 
-keys/*
-db/*
-artifacts/*
+**/keys/**
+**/db/**
+**/artifacts/**
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
