@@ -14,7 +14,7 @@ requirements.txt
 .ipynb_checkpoints
 
 **/keys/**
-**/db/**
+**/db
 **/artifacts/**
 
 # Byte-compiled / optimized / DLL files
